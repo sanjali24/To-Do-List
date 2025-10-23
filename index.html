@@ -12,13 +12,22 @@
     <div class="container">
         <div class="todo-list">
             <h1>To-Do List</h1>
+            <div class="stat-container">
+                <div class="details">
+                    <h3>Progress bar</h3>
+                    <div id ="progress"></div>
+                </div>
+            </div>
+            <div class="stats-number">
+                <p id="numbers">0 / 0</p>
+            </div>
             <form class="input">
                 <input type="text" id="input" placeholder="Write a task">
-                <button type="submit" id="add-button"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" id="add-button"><i class="fa-solid fa-plus"></i></button>
             </form>
             <div class="tasks">
                 <ul id="tasks-list"></ul>
-                <img src="assets/download__2.png" width="150" height="150" alt="no-tasks">
+                <img class="empty-image" src="assets/download__2.png" width="150" height="150" alt="no-tasks">
             </div>
         </div>
     </div>

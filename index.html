@@ -14,13 +14,17 @@
             <h1>To-Do List</h1>
             <div class="stat-container">
                 <div class="details">
-                    <h3>Progress bar</h3>
-                    <div id ="progress"></div>
+                    <h4>Progress bar</h4>
+                    <div id ="progressbar">
+                        <div id="progress"></div>
+                    </div>
                 </div>
+                <div class="stats-number">
+                    <p id="numbers">0 / 0</p>
+                </div>
+
             </div>
-            <div class="stats-number">
-                <p id="numbers">0 / 0</p>
-            </div>
+            <h2>To-Be-Done!</h2>
             <form class="input">
                 <input type="text" id="input" placeholder="Write a task">
                 <button type="button" id="add-button"><i class="fa-solid fa-plus"></i></button>
@@ -33,5 +37,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>

@@ -35,7 +35,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     font-size: 28px;
     border-radius: 20px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
@@ -45,16 +45,78 @@ body{
     color: yellow;
 }
 
-.todo-list h1{
+.todo-list h2{
     font-size: 2rem;
-    color: yellow;
+    color: purple;
+    text-shadow: 0 0 2px white;
+}
 
+.todo-list h1{
+  font-size: 3rem;
+  color: purple;
+  text-shadow: 0 0 3px white;
 }
 
 .stat-container{
-  padding: 15px
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  backdrop-filter: blur(28px);
+  background: rgba(165, 20, 117, 0.3);
 }
 
+.details{
+  width: 100%;
+}
+
+.details h4{
+  font-size: 20px;
+  -webkit-text-stroke: 0.4px black;
+  
+}
+
+#progressbar{
+  width: 100%;
+  height: 7px;
+  background: rgba(43, 2, 34, 0.336);
+  border-radius: 20px;
+  position: relative;
+  margin-top: 15px;
+}
+
+#progress{
+  width: 0px;
+  height: 100%;
+  background: yellow;
+  border-radius: 20px;
+  box-shadow: 0 0 6px rgba(230, 226, 9, 0.568);
+  transition: width 0.3s ease;
+
+
+}
+
+
+#numbers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: rgba(43, 2, 34, 0.336);
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(255, 194, 235, 0.3);
+  font-size: 1.5rem;
+}
+.stats-number{
+  font-size: 20px;
+  -webkit-text-stroke: 0.4px black;
+}
 .input{
    display: flex;
    justify-content: space-between;
@@ -69,7 +131,7 @@ body{
     border: none;
     outline:none;
     border-radius: 10px;
-    background: rgba(255, 194, 235, 0.3);
+    background: rgba(43, 2, 34, 0.336);
     color: rgb(0, 0, 0);
     font-family: "Pixelify Sans", sans-serif;
 
@@ -84,7 +146,7 @@ body{
     border-radius: 10px;
     color: yellow;
     font-size: 1.1rem;
-    background: rgba(255, 194, 235, 0.3);
+    background: rgba(43, 2, 34, 0.336);
     border: 3px solid rgba(255, 255, 255, 0.18);
     cursor: pointer;
     transition: all 0.4s ease;  
@@ -93,7 +155,7 @@ body{
   .input button:hover{
     transform: translateY(3px);
     transition: all 0.4s ease-out;
-    background: rgba(216, 19, 216, 0.603);
+    background: rgba(255, 194, 235, 0.3);
     box-shadow: 0 0 10px rgba(255, 194, 235, 0.3);
   }
 
@@ -117,6 +179,7 @@ body{
     padding: 8px 10px;
     border-radius: 10px;
     font-size: 1.2rem;
+    font-family: monospace;
     color: yellow;
     position:relative;
     transition: box-shadow 0.2s ease;
@@ -175,7 +238,7 @@ body{
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    color: white;
+    color: rgb(243, 243, 180);
     cursor: pointer;
     transition: all 0.2s ease;
     display: flex;
@@ -203,3 +266,30 @@ body{
     box-shadow: 0 0 10px rgba(218, 6, 6, 0.336);
   }
 
+
+  /*media queries*/
+  @media (max-width: 600px) {
+    .container {
+      margin: 0 20px;
+      padding: 0 10px;
+    }
+
+    .todo-list{
+      padding: 1.5rem;
+      gap: 20px;
+    }
+
+    #numbers {
+      width: 60px;
+      height: 60px;
+      font-size: 1rem;
+    }
+
+    .input input{
+      font-size: 1rem;
+    }
+    #tasks-list li{
+      font-size: 1rem;
+    }
+
+  }

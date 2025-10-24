@@ -34,13 +34,23 @@ And yes! I need to remind myself to do my laundry!!!!
  Anyways...it was fun!
  
 
+## New Update:
+
+The very first version is done YAY!!! [24-10-25]
+
+### Features updated:
+- A progress bar!
+- The tasks / to-dos are stored in the localstorage of your browser!
+- A confetti celebration when you are done with your to-dos!!!
+
+
 ## Next Update:
 
  I plan on cranking up the feel and working of the application. 
 
 ### Features: 
 
-- Progress tracker (a progress bar or ring to show how much task you have finished)
+- <s>Progress tracker (a progress bar or ring to show how much task you have finished)</s>
 - Turn the web-app into a tiny applet sort of thingy that can just hover on your computer screen like a tiny window
 - Integrate Pomodoro timer (I already have a Pomodoro timer application so why not integrate it??)
 - meh, we'll see....

@@ -140,14 +140,14 @@ document.addEventListener('DOMContentLoaded', () =>//this line ensures that only
           };
           
           function shoot() {
-            Confetti({
+            confetti({
               ...defaults,
               particleCount: 40,
               scalar: 1.2,
               shapes: ["star"],
             });
           
-            Confetti({
+            confetti({
               ...defaults,
               particleCount: 10,
               scalar: 0.75,
